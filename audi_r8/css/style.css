@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,700|Roboto&display=swap');
+
+*{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+html, body{margin: 0; padding: 0; overflow: hidden;}
+header, section, article, nav, footer{margin: 0; padding: 0; display: block;}
+header::after, section::after, article::after, nav::after, footer::after{content: ""; clear: both; display: block;}
+h1, h2, h3, h4, h5, h6{margin: 0; padding: 0; font-family: 'Orbitron', 'Roboto';}
+p, i{margin: 0; padding: 0; font-family: 'Roboto';}
+ul, ol{list-style: none; margin: 0; padding: 0;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+
+
+
+.frame{width: 100%; height: 100vh;}
+.frame .full{position: fixed; width: 100%; height: 100%; background-color: #000;  z-index: 4;}
+.frame .full .line{width: 0%; height: 3px; background: linear-gradient(90deg, rgba(0,0,0,1) 22%, rgba(185,0,0,1) 100%); position: absolute; top: 50%; left: 0;}
+.frame .full .first{font-size: 20px; position: absolute; top: 45%; left: 50%; color: #fff; opacity: 0; transform: translate(-50%, 0);}
+.frame .full .second{font-size: 20px; position: absolute; top: 50%; left: 50%; color: #fff; opacity: 0; transform: translate(-50%, 0);}
+.frame .full .third{font-size: 20px; position: absolute; top: 55%; left: 50%; color: #fff; opacity: 0; transform: translate(-50%, 0);}
+.frame .full .skip{font-size: 25px; position: fixed; bottom: 10%; right: 10%; color: #fff; display: none; cursor: pointer;}
+
+
+
+.car{width: 100%; height: 100vh; background: #000;}
+.car img{width: 70%; height: auto; position: absolute; left: 200%; bottom: -20px; z-index: 1;}
+.car .car_dark_bg{width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: absolute; top: 0; left: 0; z-index: 2;}
+.car .title{font-size: 10vw; color: #fff; position: absolute; top: 20%; left: 5%; z-index: 3; display: none;}
+
+
+
+.slide_menu{width: 100%; height: 80px; position: fixed; top: 0; left: 0; z-index: 3; display: none; border-bottom: 1px solid #777; background: rgba(255,255,255,0.1);}
+
+.slide_menu .menu{display: flex; justify-content: center; width: 50%; margin: 0 auto;}
+.slide_menu .menu li{text-align: center; padding: 0 20px;}
+.slide_menu .menu li a{display: block; font-size: 20px; font-weight: bold; color: #fff; line-height: 80px;}
+.slide_menu .menu li a img{height: 60px; margin-top: 10px;}
